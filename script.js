@@ -79,7 +79,7 @@ function drawText() {
 
   if (frameNumber < 300) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
-    context.fillText("So, I was thinking… 🌙", canvas.width / 2, canvas.height / 3);
+    context.fillText("So, I was thinking… 🌙 Amongst all the stars and galaxies🌙", canvas.width / 2, canvas.height / 3);
     opacity += 0.01;
   }
 
@@ -90,7 +90,7 @@ function drawText() {
   if (frameNumber == 600) opacity = 0;
 
   if (frameNumber > 600 && frameNumber < 900) {
-    drawTextWithLineBreaks(["Amongst all the stars and galaxies,", "in this impossibly big universe..."], canvas.width / 2, canvas.height / 3, fontSize, lineHeight);
+    drawTextWithLineBreaks(["In this impossibly big universe, 13.8 billion years in the making."], canvas.width / 2, canvas.height / 3, fontSize, lineHeight);
     opacity += 0.01;
   }
 
@@ -101,7 +101,7 @@ function drawText() {
   if (frameNumber == 1200) opacity = 0;
 
   if (frameNumber > 1800 && frameNumber < 2100) {
-    drawTextWithLineBreaks(["The universe is 13.8 billion years old,", "filled with infinite possibilities…"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+    drawTextWithLineBreaks(["Filled with infinite possibilities… a birthday alert for my absolute favorite!"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
     opacity += 0.01;
   }
 
@@ -112,13 +112,13 @@ function drawText() {
   if (frameNumber == 2400) opacity = 0;
 
   if (frameNumber > 3300 && frameNumber < 3600) {
-    drawTextWithLineBreaks(["Birthday alert for my absolute favorite!", "You're the definition of good vibes only.", "Life's 100x better with you in it!"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+    drawTextWithLineBreaks(["You radiate pure good vibes, the kind that makes life 100x better. Today, the world is officially on pause to celebrate YOU."], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
     opacity += 0.01;
   }
 
   if (frameNumber >= 3600 && frameNumber < 3900) {
     drawTextWithLineBreaks(
-      ["It's your birthday, which means the world", "is officially on pause to celebrate YOU.", "You're a 10/10, the blueprint, my fav person to exist."],
+      ["You're a 10/10, the blueprint, my favorite person to exist!."],
       canvas.width / 2, canvas.height / 2 + 2 * lineHeight, fontSize, lineHeight
     );
     opacity += 0.01;
